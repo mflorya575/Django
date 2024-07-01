@@ -1542,7 +1542,7 @@ h5 {
 /* subscribe section styling start */
 /* footer section style end */
 .footer-main-section {
-    background: #156c5f;
+    background: #6aced7;
     border-bottom: 1px solid #388277;
 }
 
@@ -1668,7 +1668,7 @@ h5 {
 
 .copy-rihgt-sec {
     padding: 25px 25px;
-    background: #156c5f;
+    background: #46979e;
 }
 
 .copy-rihgt-sec p {
@@ -3294,7 +3294,7 @@ h5 {
 /* about us page styling end */
 /* service page styling start */
 .service-banner {
-    background: url(../images/service-banner-img.jpg) no-repeat center;
+    /* background: url(../images/banner1.jpg) no-repeat center; */
     background-size: cover;
     height: 640px;
 }
