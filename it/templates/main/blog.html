@@ -25,7 +25,35 @@
         <div class="container">
             <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                 <div id="blog" class="col-xl-12">
+
+                    {% for post in posts %}
                     <div class="blog-box onecolumn-blog float-left w-100 post-item mb-4">
+                        <div class="post-item-wrap position-relative">
+                            <div class="post-image">
+                                <a href="single-blog.html"><img alt="{{ post.title }}" src="{{ post.thumbnail.url }}" style="width: 1110px; height: 462px;"></a>
+                            </div>
+                            <div class="lower-portion">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="text-size-14 text-mr">Автор: {{ post.author }}</span>
+                                <i class="tag-mb fa-solid fa-tag"></i>
+                                <span class="text-size-14">Название: {{ post.title }}</span>
+                                <p class="mb-0 text-size-16">{{ post.description }}</p>
+                            </div>
+                            <div class="button-portion loadone_twocol">
+                                <div class="date">
+                                    <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
+                                    <span class="mb-0 text-size-14">{{ post.publish }}</span>
+                                </div>
+                                <div class="button">
+                                    <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">
+                                        Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    {% comment %} <div class="blog-box onecolumn-blog float-left w-100 post-item mb-4">
                         <div class="post-item-wrap position-relative">
                             <div class="post-image">
                                 <a href="single-blog.html"><img alt="" src="assets/images/post-featured.jpg"></a>
@@ -144,31 +172,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blog-box onecolumn-blog float-left w-100 post-item mb-4">
-                        <div class="post-item-wrap position-relative">
-                            <div class="post-image">
-                                <a href="single-blog.html"><img alt="" src="assets/images/post-featured.jpg"></a>
-                            </div>
-                            <div class="lower-portion">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="text-size-14 text-mr">Автор: Алексей</span>
-                                <i class="tag-mb fa-solid fa-tag"></i>
-                                <span class="text-size-14">Название: Психотерапия</span>
-                                <p class="mb-0 text-size-16">Статья о психотерапии предлагает глубокий взгляд на эффективные методы и стратегии помощи людям в борьбе с эмоциональными и психологическими проблемами. Она рассматривает как классические, так и современные подходы, направленные на личностное развитие и улучшение качества жизни.</p>
-                            </div>
-                            <div class="button-portion loadone_twocol">
-                                <div class="date">
-                                    <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                                    <span class="mb-0 text-size-14">Dec 20,2022</span>
-                                </div>
-                                <div class="button">
-                                    <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">
-                                        Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> {% endcomment %}
+
                 </div>
             </div>
         </div>

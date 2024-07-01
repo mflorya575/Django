@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 
 def index(request):
@@ -11,9 +12,11 @@ def index(request):
 
 
 def blog(request):
+    posts = Post.objects.all()
 
     context = {
         'title': 'Блог',
+        'posts': posts
     }
 
     return render(request, 'main/blog.html', context)

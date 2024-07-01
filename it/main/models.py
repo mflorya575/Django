@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.core.validators import FileExtensionValidator
 
 
 class PublishedManager(models.Manager):
@@ -22,6 +23,14 @@ class Post(models.Model):
 
     description = models.TextField(verbose_name='Краткое описание', max_length=500, null=True)
     text = models.TextField(verbose_name='Полный текст записи', null=True)
+
+    thumbnail = models.ImageField(default='default.jpg',
+                                  verbose_name='Изображение записи',
+                                  blank=True,
+                                  upload_to='images/thumbnails/',
+                                  validators=[
+                                      FileExtensionValidator(allowed_extensions=('png', 'jpg', 'webp', 'jpeg', 'gif'))]
+                                  )
 
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
