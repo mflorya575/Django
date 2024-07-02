@@ -3587,6 +3587,10 @@ h5 {
     animation-delay: -1s;
 }
 
+.custom-black {
+    color: #000000 !important;
+}
+
 @-webkit-keyframes ballPulseDouble {
 
     0%,

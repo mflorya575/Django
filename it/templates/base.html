@@ -51,7 +51,7 @@
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
                     <figure class="mb-0">
-                        <img src="assets/images/logo.png" alt="logo">
+                        <img src="{% static "assets/images/logo.png" %}" alt="logo">
                     </figure>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -79,16 +79,16 @@
                             </div> -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="index.html">Главная</a>
+                            <a class="nav-link p-0 custom-black" href="index.html">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link p-0 active" href="about.html">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="services.html">Услуги</a>
+                            <a class="nav-link p-0 custom-black" href="services.html">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="one-column.html">Блог</a>
+                            <a class="nav-link p-0 custom-black" href="one-column.html">Блог</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown5" role="button"
@@ -120,20 +120,20 @@
                             </div>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="pricing.html">Стоимость</a>
+                            <a class="nav-link p-0 custom-black" href="pricing.html">Стоимость</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="contact.html">Контакты</a>
+                            <a class="nav-link p-0 custom-black" href="contact.html">Контакты</a>
                         </li>
                     </ul>
                     <div class="header-contact d-flex align-items-center">
                         <div class="phone d-flex align-items-center">
                             <figure class="mb-0">
-                                <img src="assets/images/phone.png" alt="phone">
+                                <img src="{% static "assets/images/phone.png" %}" alt="phone">
                             </figure>
                             <div class="phone-txt">
-                                <span class="d-block">Звоните:</span>
-                                <a href="tel:+0123456789">+012 (345) 6789</a>
+                                <span class="d-block custom-black">Звоните:</span>
+                                <a href="tel:+0123456789" class="custom-black">+012 (345) 6789</a>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div class="footer-logo-con">
                         <a href="index.html">
                             <figure>
-                                <img src="assets/images/logo.png" alt="logo">
+                                <img src="{% static "assets/images/logo.png" %}" alt="logo">
                             </figure>
                         </a>
                         <p>Deleniti aeue corrupti quos dolores quas
@@ -236,12 +236,12 @@
     <a id="button"></a>
     <!-- FOOTER SECTION END -->
     <!-- Latest compiled JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script src="{% static "assets/js/popper.min.js" %}"></script>
+    <script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "assets/js/owl.carousel.js" %}"></script>
+    <script src="{% static "assets/js/aos.js" %}"></script>
+    <script src="{% static "assets/js/custom.js" %}"></script>
     <script>
         $(window).on('load', function(){ 
         // Preloader
