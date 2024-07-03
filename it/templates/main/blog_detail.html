@@ -16,16 +16,10 @@
                         <i class="fa-solid fa-user"></i>
                         <span class="text-size-14 text-mr">Автор: {{ post.author }}</span>
                         <i class="mb-0 calendar fa-solid fa-calendar-days"></i>
-                        <span class="mb-0 text-size-14">Dec 20,2022</span>
-                        <p class="text-size-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                        <span class="mb-0 text-size-14">{{ post.publish }}</span>
+                        <p class="text-size-14">
+                            {{ post.text }}
+                        </p>
                     </div>
                     {% comment %} <div class="content2" data-aos="fade-up" data-aos-duration="700">
                         <figure class="singleblog-quoteimage">
